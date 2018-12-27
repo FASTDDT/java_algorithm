@@ -32,11 +32,11 @@ public class SelectSort {
     }
 
     public static int[] optimize(int[] a) {
-        int end = a.length/ 2;
+        int end = a.length / 2;
         int max, min;
         for (int i = 0; i < end; i++) {
             max = min = i;
-            for (int j = i + 1; j < a.length - i; j++) {
+            for (int j = i; j < a.length - i; j++) {
 
                 if (a[j] > a[max]) {
                     max = j;
@@ -59,15 +59,4 @@ public class SelectSort {
         return a;
     }
 
-    public static void main(String[] args) {
-        int[] a = Random_Test.getRandom(10, 5, 100);
-        for (int i : a) {
-            System.out.printf(i + "\t");
-        }
-        System.out.println("\nsimple Bubble sort");
-        a = optimize(a);
-        for (int i : a) {
-            System.out.printf(i + "\t");
-        }
-    }
-}
+  }
