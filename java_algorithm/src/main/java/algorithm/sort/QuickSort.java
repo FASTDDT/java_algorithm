@@ -4,7 +4,7 @@ import grammar.Random_Test;
 
 /**
  * <p>
- * Discription
+ * 快排
  * </p>
  *
  * @author father
@@ -36,20 +36,5 @@ public class QuickSort {
         simple(a, i + 1, right);
     }
 
-    public static void optimize(int[] a) {
-
-    }
-
-    public static void main(String[] args) {
-        int[] a = Random_Test.getRandom(13, 5, 1000);
-        for (int i : a) {
-            System.out.printf(i + "\t");
-        }
-        System.out.println("\nsimple Bubble sort");
-        simple(a, 0, a.length - 1);
-        for (int i : a) {
-            System.out.printf(i + "\t");
-        }
-    }
 
 }
